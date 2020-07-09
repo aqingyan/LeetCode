@@ -18,8 +18,8 @@ public:
         // 获取右子树深度
         int rightDepth = maxDepth(root->right);
 
-        // 根据左右子树深度，返回最大的那个深度+1，+1是加上当前节点
-        return leftDepth > rightDepth ? leftDepth + 1; rightDepth + 1;
+        // 根据左右子树深度，返回最大的那个深度+1，+1是加上当前节点的
+        return leftDepth > rightDepth ? leftDepth + 1:rightDepth + 1;
     }
 };
 
